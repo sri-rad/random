@@ -16,10 +16,10 @@ filename=sys.argv[1]
 addsec=int(sys.argv[2])
 f=open(filename)
 text=f.read()
-times=re.findall('[0-9]+:[0-9]+:[0-9]+',text)
+times=re.findall('[0-9]+:[0-9]+:[0-9]+,[0-9]+',text)
 timesnew=[]
 for i in times:
-    timesnew.append(convert(i, addsec))
+    timesnew.append(convert(i[:-4], addsec)+i[-4:])
 
 for i in range(len(times)):
     text=text.replace(times[i],timesnew[i])
