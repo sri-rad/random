@@ -38,6 +38,9 @@
 	.events:hover .flipper, .events.hover .flipper{
 		transform: rotateY(180deg);
 	}
+	.events:hover .front{
+		visibility:hidden;
+	}
 	.events,.front, .back {
 	width: 100px;
 	height: 110px;
