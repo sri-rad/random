@@ -1,4 +1,4 @@
-##Subtitle Fixer
+## Subtitle Fixer
 
 Fix you lagging or rushing subtitles using this simple script.
 
